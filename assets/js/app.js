@@ -16,7 +16,6 @@ createApp({
             picsum: "https://picsum.photos/200/200",
             pstyle: "fst-italic",
             active: false,
-            blue: "text-primary"
         }
     },
     methods: {
