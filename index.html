@@ -17,7 +17,9 @@
             <div class="container">
                 <h1>{{title}}</h1>
                 <img :src="picsum" alt="">
-
+                <p :class="pstyle" class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis ducimus cumque! Saepe sequi reiciendis quam deleniti repellat nihil vitae velit hic dolore temporibus, cupiditate quia voluptate a mollitia optio quas ab neque, dignissimos, quaerat consequuntur explicabo. Ipsum, omnis iste. Pariatur aperiam aliquam voluptatum accusantium explicabo quidem ipsum quam optio omnis dolor blanditiis labore, aliquid cumque hic! Nostrum impedit veniam, incidunt nulla autem praesentium illum perspiciatis laudantium facere culpa. Libero velit porro facere officia maxime nobis possimus ullam pariatur, earum sed necessitatibus recusandae perferendis. Vitae soluta labore voluptate nulla amet laboriosam tenetur rem voluptatem architecto inventore, atque laudantium optio eum ducimus quidem maiores mollitia incidunt tempore consectetur cumque. Placeat laborum voluptatibus maxime numquam commodi in vel totam quae repudiandae. Cumque debitis, magni deserunt libero tenetur ad accusantium cupiditate voluptates magnam maiores, error blanditiis necessitatibus reiciendis. Itaque explicabo, magnam vitae labore maxime quidem velit laudantium officiis consequuntur expedita, molestiae facere earum quas minima cupiditate cumque sequi, aperiam nisi iure reprehenderit voluptatem delectus amet? Alias, deleniti quidem fugiat perspiciatis quibusdam exercitationem quasi consequuntur corporis hic amet rerum numquam ducimus eum tenetur! Architecto soluta quo nesciunt eaque exercitationem temporibus odio et itaque. Molestias culpa eaque repudiandae perferendis, tempora a maxime quam nesciunt consectetur.</p>
+                <h2 :class="{'text-primary' : active}">{{ message }}</h2>
+                <button @click="changeColor">Change color</button>
             </div>
             <!-- /.container -->
         </div>

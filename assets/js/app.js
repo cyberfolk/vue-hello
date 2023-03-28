@@ -12,7 +12,16 @@ createApp({
     data() {
         return {
             title: 'Hello Vue!',
+            message: "boh na roba temporanea",
             picsum: "https://picsum.photos/200/200",
+            pstyle: "fst-italic",
+            active: false,
+            blue: "text-primary"
+        }
+    },
+    methods: {
+        changeColor() {
+            this.active = !this.active;
         }
     }
 }).mount('#app')
