@@ -5,3 +5,14 @@
  * BONUS:
  * Aggiungere alla pagina un’immagine, presa anch’essa da un data.
  */
+
+const { createApp } = Vue
+
+createApp({
+    data() {
+        return {
+            title: 'Hello Vue!',
+            picsum: "https://picsum.photos/200/200",
+        }
+    }
+}).mount('#app')
