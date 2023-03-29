@@ -16,11 +16,30 @@ createApp({
             picsum: "https://picsum.photos/200/200",
             pstyle: "fst-italic",
             active: false,
+            count: 0,
+            checkedNames: [],
+            selected: 'A',
+            options: [
+                { text: 'One', value: 'A' },
+                { text: 'Two', value: 'B' },
+                { text: 'Three', value: 'C' }
+            ],
         }
     },
     methods: {
         changeColor() {
             this.active = !this.active;
-        }
+        },
+        addOneToCount() {
+            this.count++;
+        },
+        greet(event) {
+            // `this` inside methods points to the current active instance
+            alert(`${this.title}!`)
+            // `event` is the native DOM event
+            if (event) {
+                alert(event.target.tagName)
+            }
+        },
     }
 }).mount('#app')
