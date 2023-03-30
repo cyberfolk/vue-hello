@@ -11,6 +11,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            tmp: 1,
             title: 'Hello Vue!',
             message: "boh na roba temporanea",
             picsum: "https://picsum.photos/200/200",
@@ -27,6 +28,11 @@ createApp({
         }
     },
     methods: {
+        changePic() {
+            this.picsum = "";
+            console.log(this.picsum);
+            this.picsum = "https://picsum.photos/200/200";
+        },
         changeColor() {
             this.active = !this.active;
         },
